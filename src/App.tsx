@@ -546,7 +546,7 @@ export default function App() {
   }
 
   return (
-    <div className="flex h-screen bg-[#000000] text-[#e2e8f0] overflow-hidden font-sans">
+    <div className="flex h-[100dvh] w-full bg-[#000000] text-[#e2e8f0] overflow-hidden font-sans">
       {/* Mobile Sidebar Overlay */}
       <AnimatePresence>
         {sidebarOpen && (
@@ -707,7 +707,7 @@ export default function App() {
         </div>
 
         {/* Input Area */}
-        <div className="absolute bottom-6 left-0 right-0 px-4 z-20 pointer-events-none">
+        <div className="absolute bottom-4 sm:bottom-6 left-0 right-0 px-4 z-20 pointer-events-none">
           <div className="max-w-[768px] mx-auto relative pointer-events-auto">
             <AnimatePresence>
               {showScrollButton && (
@@ -726,7 +726,7 @@ export default function App() {
               )}
             </AnimatePresence>
             <div
-              className={`bg-[#09090b]/85 backdrop-blur-md border rounded-[20px] p-4 min-h-[120px] flex flex-col shadow-[0_20px_50px_rgba(0,0,0,0.85)] transition-all duration-200 ${inputValue.trim() || isTyping ? "border-[#f59e0b] shadow-[0_0_0_1px_rgba(245,158,11,0.3)]" : "border-[#27272a] focus-within:border-[#f59e0b] focus-within:shadow-[0_0_0_1px_rgba(245,158,11,0.3)]"}`}
+              className={`bg-[#09090b]/85 backdrop-blur-md border rounded-[20px] p-3 sm:p-4 min-h-[100px] sm:min-h-[120px] flex flex-col shadow-[0_20px_50px_rgba(0,0,0,0.85)] transition-all duration-200 ${inputValue.trim() || isTyping ? "border-[#f59e0b] shadow-[0_0_0_1px_rgba(245,158,11,0.3)]" : "border-[#27272a] focus-within:border-[#f59e0b] focus-within:shadow-[0_0_0_1px_rgba(245,158,11,0.3)]"}`}
             >
               <div className="relative flex-1 mb-3 flex flex-col gap-2">
                 {attachedFile && (

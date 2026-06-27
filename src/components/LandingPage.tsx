@@ -80,7 +80,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onEnter }) => {
   } as const;
 
   return (
-    <div className="min-h-screen bg-[#09090b] text-[#f4f4f5] flex flex-col relative overflow-hidden font-sans">
+    <div className="h-[100dvh] w-full bg-[#09090b] text-[#f4f4f5] flex flex-col relative overflow-y-auto font-sans">
       
       {/* Top Navigation Header wrapped in elegant fade animation */}
       <motion.header 

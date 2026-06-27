@@ -10,6 +10,11 @@ async function startServer() {
   app.use(express.json({ limit: '20mb' }));
   app.use(express.urlencoded({ limit: '20mb', extended: true }));
 
+  // Lightweight ping endpoint for keep-awake services (like UptimeRobot)
+  app.get("/api/ping", (req, res) => {
+    res.status(200).send("pong");
+  });
+
   // Chat API integration supporting two separate API keys
   app.post("/api/chat", async (req, res) => {
     try {
