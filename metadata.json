@@ -1,0 +1,6 @@
+{
+  "name": "AI Programming Assistant UI",
+  "description": "A clone of premium AI programming assistant interfaces featuring a clean split-screen layout, advanced input area, and interactive code blocks.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
