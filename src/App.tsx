@@ -707,7 +707,7 @@ export default function App() {
         </div>
 
         {/* Input Area */}
-        <div className="absolute bottom-4 sm:bottom-6 left-0 right-0 px-4 z-20 pointer-events-none">
+        <div className="fixed md:absolute bottom-4 sm:bottom-6 left-0 right-0 px-4 z-30 pointer-events-none">
           <div className="max-w-[768px] mx-auto relative pointer-events-auto">
             <AnimatePresence>
               {showScrollButton && (
